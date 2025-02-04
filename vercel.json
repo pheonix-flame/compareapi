@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "api/compare_images_api.py", 
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/compare_images_api.py" 
+    }
+  ]
+}
